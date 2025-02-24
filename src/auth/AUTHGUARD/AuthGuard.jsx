@@ -6,15 +6,15 @@ export const AuthGuard = ({ children }) => {
   const router = useRouter();
   const { self } = useSelf();
 
-  useEffect(() => {
-    if (!self) {
-      router.push("/login");
-    }
-  }, [self, router]);
+  // useEffect(() => {
+  //   if (!self) {
+  //     router.push("/login");
+  //   }
+  // }, [self, router]);
 
-  if (!self) {
-    return null;
-  }
+  // if (!self) {
+  //   return null;
+  // }
 
   return <>{children}</>;
 };
