@@ -54,7 +54,7 @@ export const Login = () => {
                   type="text"
                   name="email"
                   className="form-control"
-                  placeholder="Enter your email or nickname"
+                  placeholder="Enter your email or username"
                   value={formData.email}
                   onChange={handleInputChange}
                   required
